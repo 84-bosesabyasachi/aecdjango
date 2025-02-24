@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'myaction' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="lname" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="text" name="city" placeholder="City" required>
+        <input type="text" name="state" placeholder="State" required>
+        <input type="text" name="pin" placeholder="PIN Code" required>
+        <input type="text" name="father_name" placeholder="Father's Name" required>
+        <input type="text" name="mother_name" placeholder="Mother's Name" required>
+        <input type="text" name="tenth_marks" placeholder="10th Marks" required>
+        <input type="text" name="twelth_marks" placeholder="12th Marks" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <button type="submit">Submit</button>
+    </form>       
+</body>
+</html>
