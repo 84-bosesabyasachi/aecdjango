@@ -18,25 +18,33 @@
             <td>Pin</td>
             <td>Father's Name</td>
             <td>Mother's Name</td>
+            <td>password</td>
             <td>10th Marks</td>
             <td>12th Marks</td>
             <td>Subject</td>
+            <td>isApproved</td>
         </tr>
         {% for i in stu %}
         <tr>
             <td>{{i.fname}}</td>
             <td>{{i.lname}}</td>
             <td>{{i.email}}</td>
-            <td>{{i.phone_no}}<td><a href="dele/{{i.id}}">Delete</a></td></td>
+            <td>{{i.phone_no}}</td>
             <td>{{i.address}}</td>
             <td>{{i.city}}</td>
             <td>{{i.state}}</td>
             <td>{{i.pin}}</td>
             <td>{{i.father_name}}</td>
             <td>{{i.mother_name}}</td>
+            <td>{{i.password}}</td>
             <td>{{i.tenth_marks}}</td>
             <td>{{i.twelth_marks}}</td>
             <td>{{i.subject}}</td>
+            <td>{{i.isApproved}}</td>
+            <td><a href="dele/{{i.id}}">Delete</a></td>
+            <td><a href="edit/{{i.id}}">Edit</td>
+            <td><a href="approve/{{i.id}}">Approve</a></td>
+            <td><a href="decline/{{i.id}}">Decline</a></td>                
         </tr>
         {% endfor %}
     </table>

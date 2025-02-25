@@ -15,6 +15,7 @@ class student(models.Model):
     lname = models.CharField(max_length=100)
     address= models.CharField(max_length=100)
     pin = models.IntegerField()
+    password = models.CharField(max_length=100)
     city= models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
@@ -24,5 +25,6 @@ class student(models.Model):
     tenth_marks = models.IntegerField()
     twelth_marks = models.IntegerField()
     subject = models.CharField(max_length=100)
+    isApproved = models.BooleanField(default=False) 
     class Meta:
         db_table = 'student'
